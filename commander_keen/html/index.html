@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deelname prijsvraag - Commander Keen: Goodbye Galaxy!</title>
+</head>
+
+<body>
+    <div class="header">
+        <h1 id="header-title">Deelname prijsvraag - Commander Keen: Goodbye Galaxy!</h1>
+    </div>
+    <div class="img-container">
+        <img id="img-comannderkeen" src="/img/commanderkeen.jpg" alt="">
+    </div>
+    <div class="middetext">
+        <p class="header-description">Onlangs is Commander Keen: Goodbye Galaxy! verschenen en dus hebben wij, in
+            samenwerking met id Software een toffe prijsvraag voor jullie. Vanaf nu maak je kans op een van de vier
+            exemplaren van de game. Vul onderstaande gegevens in en geef antwoord op de volgende vraag:</p>
+        <h3 class="header-question"><strong>Tegen welk buitenaards ras neemt Commander Keen het op in Goodbye
+                Galaxy!?</strong></h3>
+        <p class="header-note">Wie weet maak jij kans op een van de vier Limited Edition uitvoeringen van de game
+            Commander Keen: Goodbye Galaxy!</p>
+    </div>
+    <form class="form-group" id="formbro">
+        <label for="first-name" id="first-name-label">Voornaam:</label>
+        <input id="first-name" name="first-name" type="text" required>
+        <label for="last-name" id="last-name-label">Achternaam:</label>
+        <input type="text" id="last-name" name="last-name" required>
+        <label for="address" id="address-label">Adres:</label>
+        <input type="text" id="address" name="address" required>
+        <label for="house-number" id="house-number-label">Huisnummer:</label>
+        <input type="text" id="house-number" name="house-number" required>
+        <label for="postcode" id="postcode-label">Postcode:</label>
+        <input type="text" id="postcode" name="postcode" pattern="[0-9]{4}[A-Z]{2}" title="Voer een geldige postcode in" required>
+        <label for="city" id="city-label">Stad:</label>
+        <input type="text" id="city" name="city" required>
+        <label for="gender" id="gender-label">Geslacht:</label>
+        <input type="radio" id="male" name="gender" value="man" required>
+        <label for="male" id="male-label">Man</label>
+        <input type="radio" id="female" name="gender" value="vrouw">
+        <label for="female" id="female-label">Vrouw</label>
+        <input type="radio" id="other" name="gender" value="overig">
+        <label for="other" id="other-label">Overig</label>
+        <label for="birthdate" id="birthdate-label">Geboortedatum:</label>
+        <input type="number" name="dag" id="dag-textbox" min="1" max="31" required>
+        <select id="birthdate" name="birthdate" required>
+            <option value="">Selecteer maand</option>
+            <option value="januari">Januari</option>
+            <option value="februari">Februari</option>
+            <option value="maart">Maart</option>
+            <option value="april">April</option>
+            <option value="mei">Mei</option>
+            <option value="juni">Juni</option>
+            <option value="juli">Juli</option>
+            <option value="augustus">Augustus</option>
+            <option value="september">September</option>
+            <option value="oktober">Oktober</option>
+            <option value="november">November</option>
+            <option value="december">December</option>
+        </select>
+        <input type="number" name="jaar" id="jaar" min="1900" max="2100" required>
+        <label for="answer" id="answer-label">Antwoord:</label>
+        <input type="text" id="answer" name="answer" required>
+        <button type="submit" id="submit-button">Verzenden</button>
+    </form>
+</body>
+
+</html>
